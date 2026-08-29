@@ -56,6 +56,10 @@ draw_config:
       opacity: 1.0;
     } 
 
+    text.tap {
+      translate: 0px -11px;
+    }
+
     .combo.text_with_symbol.tap {
       translate: -1px 1px;
     }
