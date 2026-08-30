@@ -36,21 +36,42 @@
         times: times {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &macro_tap &kp KP_0 &macro_tap &kp KP_2 &macro_tap &kp KP_1 &macro_tap &kp KP_5 &macro_release &kp LALT>;
+            bindings
+            = <&macro_press &kp LALT>
+            , <&macro_tap &kp KP_0>
+            , <&macro_tap &kp KP_2>
+            , <&macro_tap &kp KP_1>
+            , <&macro_tap &kp KP_5>
+            , <&macro_release &kp LALT>
+            ;
         };
 
         // ###############################################################
         degree: degree {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &macro_tap &kp KP_0 &macro_tap &kp KP_1 &macro_tap &kp KP_7 &macro_tap &kp KP_6 &macro_release &kp LALT>;
+            bindings
+            = <&macro_press &kp LALT>
+            , <&macro_tap &kp KP_0>
+            , <&macro_tap &kp KP_1>
+            , <&macro_tap &kp KP_7>
+            , <&macro_tap &kp KP_6>
+            , <&macro_release &kp LALT>
+            ;
         };
 
         // ###############################################################
         oslash: oslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &macro_tap &kp KP_0 &macro_tap &kp KP_2 &macro_tap &kp KP_1 &macro_tap &kp KP_6 &macro_release &kp LALT>;
+            bindings
+            = <&macro_press &kp LALT>
+            , <&macro_tap &kp KP_0>
+            , <&macro_tap &kp KP_2>
+            , <&macro_tap &kp KP_1>
+            , <&macro_tap &kp KP_6>
+            , <&macro_release &kp LALT>
+            ;
         };
 
         // ###############################################################
