@@ -76,28 +76,28 @@
         };
 
         // ###############################################################
-        up5: UP5 {
+        UP5: UP5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
         };
 
         // ###############################################################
-        down5: DOWN5 {
+        DOWN5: DOWN5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
         };
 
         // ###############################################################
-        right5: RIGHT5 {
+        RIGHT5: RIGHT5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
         };
 
         // ###############################################################
-        left5: LEFT5 {
+        LEFT5: LEFT5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
