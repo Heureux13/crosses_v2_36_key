@@ -177,13 +177,13 @@
             display-name = "Navigation";
             bindings = <
 
-                &none              &kp HOME        &kp UP5          &kp END            &none                             &none             &kp HOME           &kp UP             &kp END            &none
+                &none              &kp HOME        &UP5             &kp END            &none                             &none             &kp HOME           &kp UP             &kp END            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &hml LGUI Z        &hml LALT LEFT5 &hml LCTRL DOWN5 &hml LSHFT RIGHT5  &none                             &none             &hmr RSHFT LEFT    &hmr RCTRL DOWN    &hmr RALT RIGHT    &hmr RGUI Z
+                &hml LGUI Z        &hml LALT &LEFT5 &hml LCTRL &DOWN5 &hml LSHFT &RIGHT5 &none                           &none             &hmr RSHFT LEFT    &hmr RCTRL DOWN    &hmr RALT RIGHT    &hmr RGUI Z
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &none              &none           &none            &none              &none                             &none             &none              &none              &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                                                   &none           &none               &none                             &none             &none              &none
+                                                   &none            &none              &none                             &none             &none              &none
             >;
         };
 
