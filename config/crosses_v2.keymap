@@ -108,8 +108,8 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT>
                      , <&macro_press &mkp MCLK>
-                     , <&macro_release &kp MCLK>
-                     , <&macro_release &mkp LSHFT>
+                     , <&macro_release &mkp MCLK>
+                     , <&macro_release &kp LSHFT>
                      ;
         };
     };
@@ -155,13 +155,13 @@
             display-name = "Macros";
             bindings = <
 
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &none              &none           &none            &none              &oslash                          &none              &none              &UP5               &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &kp LGUI           &kp LALT        &kp LCTRL        &kp SHFT           &degree                          &none              &LEFT5             &DOWN5             &RIGHT5            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &lt 8 X            &kp PG_UP       &kp PG_DN        &kp LG(LC(LEFT))   &times                           &none              &none              &none              &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                                                   &none            &none             &none                             &none              &none              &none
+                                                   &none            &none              &none                            &none              &none              &none
             >;
         };
 
@@ -268,7 +268,7 @@
             bindings = <
                 &kp GRAVE          &none           &kp LC(P)        &kp BSPC           &kp DEL                           &kp C_PREV        &kp C_PP           &kp C_NEXT         &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &hml LGUI CAPS     &none           &none            &shift_mclk        &kp PSCRN                         &degree           &LEFT5             &DOWN5             &RIGHT5            &none
+                &hml LGUI CAPS     &mkp MCLK       &mkp RCLK         &shift_mclk        &kp PSCRN                         &degree           &mkp LCLK          &DOWN5             &RIGHT5            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &lt 8 X            &kp PG_UP       &kp PG_DN        &kp LG(LC(LEFT))   &kp LG(LC(RIGHT))                 &times            &none              &none              &none              &lt 8 X
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
