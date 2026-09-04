@@ -102,6 +102,14 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
         };
+
+        shift_mclk: shift_mclk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LSHFT &mkp MCLK>
+                     , <&macro_release &kp LSHFT &mkp MCLK>
+                     ;
+        };
     };
 
 //###################################################################################################################################################################################################################
