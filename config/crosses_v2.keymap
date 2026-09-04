@@ -79,6 +79,8 @@
         UP5: UP5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
         };
 
@@ -86,13 +88,17 @@
         DOWN5: DOWN5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
-        };
+            };
 
         // ###############################################################
         RIGHT5: RIGHT5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
         };
 
@@ -100,14 +106,19 @@
         LEFT5: LEFT5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
         };
 
-        shift_mclk: shift_mclk {
+        shmc: shmc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&macro_press &kp LSHFT>
                      , <&macro_press &mkp MCLK>
+                     , <&macro_pause_for_release>
                      , <&macro_release &mkp MCLK>
                      , <&macro_release &kp LSHFT>
                      ;
@@ -268,7 +279,7 @@
             bindings = <
                 &kp GRAVE          &none           &kp LC(P)        &kp BSPC           &kp DEL                           &kp C_PREV        &kp C_PP           &kp C_NEXT         &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &hml LGUI CAPS     &mkp MCLK       &mkp RCLK         &shift_mclk        &kp PSCRN                         &degree           &mkp LCLK          &DOWN5             &RIGHT5            &none
+                &hml LGUI CAPS     &mkp MCLK       &mkp RCLK        &shmc              &kp PSCRN                         &degree           &mkp LCLK          &DOWN5             &RIGHT5            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &lt 8 X            &kp PG_UP       &kp PG_DN        &kp LG(LC(LEFT))   &kp LG(LC(RIGHT))                 &times            &none              &none              &none              &lt 8 X
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
