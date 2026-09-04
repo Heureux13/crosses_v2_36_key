@@ -106,8 +106,10 @@
         shift_mclk: shift_mclk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHFT &mkp MCLK>
-                     , <&macro_release &kp LSHFT &mkp MCLK>
+            bindings = <&macro_press &kp LSHFT>
+                     , <&macro_press &mkp MCLK>
+                     , <&macro_release &kp MCLK>
+                     , <&macro_release &mkp LSHFT>
                      ;
         };
     };
@@ -187,7 +189,7 @@
 
                 &none              &kp HOME        &UP5             &kp END            &none                             &none             &kp HOME           &kp UP             &kp END            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &hml LGUI Z        &hml LALT &LEFT5 &hml LCTRL &DOWN5 &hml LSHFT &RIGHT5 &none                           &none             &hmr RSHFT LEFT    &hmr RCTRL DOWN    &hmr RALT RIGHT    &hmr RGUI Z
+                &hml LGUI Z        &hml LALT LEFT  &hml LCTRL DOWN  &hml LSHFT RIGHT   &none                             &none             &hmr RSHFT LEFT    &hmr RCTRL DOWN    &hmr RALT RIGHT    &hmr RGUI Z
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &none              &none           &none            &none              &none                             &none             &none              &none              &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
@@ -266,7 +268,7 @@
             bindings = <
                 &kp GRAVE          &none           &kp LC(P)        &kp BSPC           &kp DEL                           &oslash           &none              &UP5               &none              &studio_unlock
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &hml LGUI CAPS     &none           &none            &shift_mclk       &kp PSCRN                         &degree           &LEFT5             &DOWN5             &RIGHT5            &none
+                &hml LGUI CAPS     &none           &none            &shift_mclk        &kp PSCRN                         &degree           &LEFT5             &DOWN5             &RIGHT5            &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &lt 8 X            &kp PG_UP       &kp PG_DN        &kp LG(LC(LEFT))   &kp LG(LC(RIGHT))                 &times            &none              &none              &none              &lt 8 X
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
