@@ -14,7 +14,7 @@
             flavor = "balanced";
 
             // only allow a hold if the key was idle, not pressed, in this about of miliseconds
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <150>;
 
             // You have this much time to tap the key, any longer and it is a hold
             tapping-term-ms = <150>;
@@ -33,7 +33,7 @@
             flavor = "balanced";
 
             // only allow a hold if the key was idle, not pressed, in this about of miliseconds
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <150>;
 
             // You have this much time to tap the key, any longer and it is a hold
             tapping-term-ms = <150>;
