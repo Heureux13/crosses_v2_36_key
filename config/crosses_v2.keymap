@@ -13,7 +13,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
 
-            // only allow a hold if the key was idle, not pressed, in this amount of miliseconds
+            // only allow a hold if the key was idle, not pressed, in this amount of miliseconds fuck
             require-prior-idle-ms = <180>;
 
             // You have this much time to tap the key, any longer and it is a hold
