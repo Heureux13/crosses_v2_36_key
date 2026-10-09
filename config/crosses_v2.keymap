@@ -41,7 +41,7 @@
             #binding-cells = <2>;
 
             flavor = "hold-preferred";
-            tapping-term-ms = <170>;
+            tapping-term-ms = <180>;
 
             bindings = <&mo>, <&kp>;
         };
