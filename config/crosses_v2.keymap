@@ -13,7 +13,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
 
-            require-prior-idle-ms = <180>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
+            require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
             tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
@@ -27,7 +27,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
 
-            require-prior-idle-ms = <180>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
+            require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
             tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
@@ -39,9 +39,11 @@
         tr: thumb_buttons {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            flavor = "balanced";
 
-            flavor = "hold-preferred";
-            tapping-term-ms = <180>;
+            require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
+            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&mo>, <&kp>;
         };
