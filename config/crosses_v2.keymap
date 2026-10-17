@@ -14,7 +14,7 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
-            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            tapping-term-ms = <150>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&kp>, <&kp>;
@@ -28,7 +28,7 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
-            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            tapping-term-ms = <150>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&kp>, <&kp>;
@@ -42,7 +42,7 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <160>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
-            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            tapping-term-ms = <130>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <150>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&mo>, <&kp>;
@@ -264,13 +264,13 @@
             display-name = "Layer 07";
             bindings = <
 
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &kp Q              &kp W           &kp E            &kp R              &kp T                            &kp Y              &kp U              &kp I              &kp O              &kp P
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &kp A              &kp S           &kp D            &kp F              &kp G                            &kp H              &kp J              &kp K              &kp L              &kp SQT
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &none              &none           &none            &none              &none                            &none              &none              &none              &none              &none
+                &lt 9 Z            &kp X           &kp C            &kp V              &kp B                            &kp N              &kp M              &kp COMMA          &kp DOT            &lt 9 SLASH
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                                                   &none            &none              &none                            &none              &none              &none
+                                                   &tr 3 ESC        &tr 2 TAB          &tr 1 RET                        &tr 1 SPACE        &kp BSPC       &tr 3 DEL
             >;
         };
 
@@ -282,7 +282,7 @@
 
                 &bt BT_PRV         &bt BT_NXT      &none            &bt BT_CLR         &bt BT_CLR_ALL                   &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
-                &none              &none           &none            &none              &none                            &bt BT_DISC 0      &bt BT_DISC 1      &bt BT_DISC 2      &bt BT_DISC 3      &bt BT_DISC 4
+                &mo 1              &mo 7           &none            &none              &none                            &bt BT_DISC 0      &bt BT_DISC 1      &bt BT_DISC 2      &bt BT_DISC 3      &bt BT_DISC 4
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
                 &studio_unlock     &none           &none            &none              &none                            &none              &none              &none              &none              &none
             //--------------------|---------------|----------------|------------------|-------------------|-------------------------------|------------------|------------------|------------------|------------------------
