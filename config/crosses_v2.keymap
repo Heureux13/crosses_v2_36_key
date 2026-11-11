@@ -14,8 +14,8 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <170>;  // If you press this key within x ms of pressing another non-modifier key, it resolves as a **tap**. It doesn’t get to act as a hold in that case.
-            tapping-term-ms = <160>;        // You have this much time to tap the key, any longer and it is a hold
-            quick-tap-ms = <160>;           //you pressed and released the key under under this time so it is a TAP
+            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            quick-tap-ms = <180>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33 34 35>; // List of keys on the right side of the keyboard
@@ -28,8 +28,8 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <170>;  // If you press this key within {time} ms of pressing another non-modifier key, it resolves as a **tap**. It doesn’t get to act as a hold in that case.
-            tapping-term-ms = <160>;        // Otherwise, holding the key longer than {time} ms makes it a **hold**. Releasing sooner makes it a **tap**, unless `flavor = "balanced"` resolves it as a hold because another key was pressed and released while it was down.
-            quick-tap-ms = <160>;           // If you press this same key again within {time} ms of its first press, that next press is forced to be a **tap**, even if you hold it longer.
+            tapping-term-ms = <180>;        // Otherwise, holding the key longer than {time} ms makes it a **hold**. Releasing sooner makes it a **tap**, unless `flavor = "balanced"` resolves it as a hold because another key was pressed and released while it was down.
+            quick-tap-ms = <180>;           // If you press this same key again within {time} ms of its first press, that next press is forced to be a **tap**, even if you hold it longer.
 
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>; // List of keys on the left side of the keyboards
@@ -42,8 +42,8 @@
             flavor = "balanced";
 
             require-prior-idle-ms = <50>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
-            tapping-term-ms = <160>;        // You have this much time to tap the key, any longer and it is a hold
-            quick-tap-ms = <160>;           //you pressed and released the key under under this time so it is a TAP
+            tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
+            quick-tap-ms = <180>;           //you pressed and released the key under under this time so it is a TAP
 
             bindings = <&mo>, <&kp>;
         };
