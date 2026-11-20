@@ -41,7 +41,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
 
-            require-prior-idle-ms = <50>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds fu
+            require-prior-idle-ms = <50>;  // only allow a hold if the key was idle, not pressed, in this amout of miliseconds
             tapping-term-ms = <180>;        // You have this much time to tap the key, any longer and it is a hold
             quick-tap-ms = <180>;           //you pressed and released the key under under this time so it is a TAP
 
